@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist de Criação de Páginas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #555;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        label {
+            font-size: 16px;
+            color: #333;
+            margin-left: 8px;
+        }
+
+        input[type="checkbox"] {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+
+        img {
+            display: block;
+            margin-top: 10px;
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        /* Responsividade para dispositivos móveis */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+                height: auto;
+            }
+
+            .container {
+                padding: 15px;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            label {
+                font-size: 14px;
+            }
+
+            input[type="checkbox"] {
+                transform: scale(1);
+            }
+        }
+
+        /* Adicionando lembrete no final */
+        .reminder {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e9f7ef;
+            border-left: 4px solid #28a745;
+            color: #155724;
+            font-weight: bold;
+            border-radius: 4px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Checklist de Criação de Páginas (Dropshipping/Infoproduto)</h1>
+        <h2>Criação da Página:</h2>
+        <ul>
+            <li>
+                <input type="checkbox" id="tarefa1">
+                <label for="tarefa1">Após 24 a 48 horas de aquecimento, crie a página no Facebook.</label>
+            </li>
+            <li>
+                <input type="checkbox" id="tarefa2">
+                <label for="tarefa2">Preencha todas as informações (exceto WhatsApp e Instagram).</label>
+                <!-- Aqui você insere a imagem -->
+                <img src="https://logevidadewellness.online/criandopagina/img/captura-pagina1.png" alt="Preenchendo informações da página">
+            </li>
+            <li>
+                <input type="checkbox" id="tarefa3">
+                <label for="tarefa3">Convide amigos para seguir a página.</label>
+            </li>
+        </ul>
+
+        <h2>Publicações na Página:</h2>
+        <ul>
+            <li>
+                <input type="checkbox" id="tarefa4">
+                <label for="tarefa4">Faça no mínimo 3 publicações (foto, texto, vídeo).</label>
+            </li>
+            <li>
+                <input type="checkbox" id="tarefa5">
+                <label for="tarefa5">1 publicação de foto.</label>
+            </li>
+            <li>
+                <input type="checkbox" id="tarefa6">
+                <label for="tarefa6">1 publicação de texto.</label>
+            </li>
+            <li>
+                <input type="checkbox" id="tarefa7">
+                <label for="tarefa7">1 publicação de vídeo.</label>
+            </li>
+        </ul>
+
+        <h2>Post Especial, OBRIGATORIO (Localização):</h2>
+        <ul>
+            <li>
+                <input type="checkbox" id="tarefa8">
+                <label for="tarefa8">Publique uma foto de um ponto próximo ao endereço informado.</label>
+            </li>
+            <li>
+                <input type="checkbox" id="tarefa9">
+                <label for="tarefa9">Na publicação, marque o local onde estava (exemplo: restaurante Bocas).</label>
+            </li>
+        </ul>
+
+        <!-- Lembrete final -->
+        <div class="reminder">
+            Não se esqueça de atualizar o Asana com as tarefas realizadas.
+        </div>
+    </div>
+</body>
+</html>
