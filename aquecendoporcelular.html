@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,62 +13,108 @@
         }
         .container {
             background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 800px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
             margin: auto;
         }
         h1, h2 {
             text-align: center;
+            color: #2c3e50;
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
         li {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 1.1em;
         }
         label {
-            margin-left: 8px;
+            margin-left: 10px;
         }
         input[type="checkbox"] {
-            transform: scale(1.5);
+            transform: scale(1.3);
+            cursor: pointer;
         }
         .video {
-            margin-top: 20px;
+            margin-top: 30px;
             display: flex;
             justify-content: center;
+        }
+        iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border: none;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Checklist de Aquecimento de Perfis no Facebook</h1>
+        
         <h2>Preparação Inicial</h2>
         <ul>
-            <li><input type="checkbox" id="config1"><label for="config1">Duplicar perfil de navegador para Android e ajustar URL inicial</label></li>
+            <li>
+                <input type="checkbox" id="config1">
+                <label for="config1">Duplicar perfil de navegador para Android e ajustar URL inicial para <a href="https://m.facebook.com" target="_blank">m.facebook.com</a></label>
+            </li>
         </ul>
+        
         <h2>Configuração Diária e Sincronização</h2>
         <ul>
-            <li><input type="checkbox" id="daily1"><label for="daily1">Acessar o perfil Android diariamente</label></li>
-            <li><input type="checkbox" id="daily2"><label for="daily2">Sincronizar perfis na fase de aquecimento</label></li>
+            <li>
+                <input type="checkbox" id="daily1">
+                <label for="daily1">Acessar o perfil Android diariamente</label>
+            </li>
+            <li>
+                <input type="checkbox" id="daily2">
+                <label for="daily2">Sincronizar perfis na fase de aquecimento utilizando Ads Power</label>
+            </li>
         </ul>
+        
         <h2>Atividades Manuais de Aquecimento</h2>
         <ul>
-            <li><input type="checkbox" id="activity1"><label for="activity1">Comentar em posts</label></li>
-            <li><input type="checkbox" id="activity2"><label for="activity2">Curtir publicações</label></li>
-            <li><input type="checkbox" id="activity3"><label for="activity3">Compartilhar conteúdo</label></li>
-            <li><input type="checkbox" id="activity4"><label for="activity4">Manter atividade por 30 minutos</label></li>
+            <li>
+                <input type="checkbox" id="activity1">
+                <label for="activity1">Comentar em posts relevantes</label>
+            </li>
+            <li>
+                <input type="checkbox" id="activity2">
+                <label for="activity2">Curtir publicações para aumentar a visibilidade</label>
+            </li>
+            <li>
+                <input type="checkbox" id="activity3">
+                <label for="activity3">Compartilhar conteúdo alinhado com os interesses do perfil</label>
+            </li>
+            <li>
+                <input type="checkbox" id="activity4">
+                <label for="activity4">Manter atividade por pelo menos 30 minutos diariamente</label>
+            </li>
         </ul>
+        
         <h2>Monitoramento e Ajustes Contínuos</h2>
         <ul>
-            <li><input type="checkbox" id="monitor1"><label for="monitor1">Monitorar interações e ajustar estratégias</label></li>
-            <li><input type="checkbox" id="improve1"><label for="improve1">Coletar feedback e implementar melhorias</label></li>
+            <li>
+                <input type="checkbox" id="monitor1">
+                <label for="monitor1">Monitorar interações e ajustar estratégias conforme necessário</label>
+            </li>
+            <li>
+                <input type="checkbox" id="improve1">
+                <label for="improve1">Coletar feedback e implementar melhorias nas interações</label>
+            </li>
         </ul>
+        
         <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/gqL61LCFnPQ?start=90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe 
+                src="https://www.youtube.com/embed/gqL61LCFnPQ?start=90" 
+                title="Tutorial de Aquecimento de Perfis no Facebook" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
         </div>
     </div>
 </body>
